@@ -13,13 +13,12 @@ SOBRE ESSE DIRETÓRIO
   Uma forma de fazer isso é através de um token.
   Os sites que precisarem acessar o web service deverão enviar um token e no web service, será verificado se o token enviado é válido para processar a requisição.
   Dentro do arquivo há exemplo de como criar token.
-  
-
 
 #### 2. DOCUMENTAÇÃO: Documente o seu web service
   Imagine que você criou um web service que precisará receber cadastros de uma aplicação remota.
   Para que o sistema externo consiga enviar os dados de modo correto, você precisa informar quais dados o seu web service recebe.
   Essa documentação deve ser detalhada. 
+  - Codificação utilizada, nesse exemplo JSon.
   - url do seu web service.
   - O padrão do token para acesso.
   - Campos que o seu web service.
