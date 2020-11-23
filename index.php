@@ -32,7 +32,7 @@ $json_decode = json_decode($json,true);
 //Varrendo a variável $json_decode, que contém os dados dos clientes em um array associativo.
 foreach($json_decode as $cliente){
 
-	echo "id: ".$cliente["id"].", Nome: ".$cliente["nome"].", Idade: ".$cliente["idade"]."<br>\n";
+  echo "id: ".$cliente["id"].", Nome: ".$cliente["nome"].", Idade: ".$cliente["idade"]."<br>\n";
 
 }
 
@@ -46,7 +46,7 @@ $json_decode = json_decode($json);
 
 foreach($json_decode as $cliente){
 
-	echo "id: ".$cliente->id.", Nome: ".$cliente->nome.", Idade: ".$cliente->idade."<br>\n";
+  echo "id: ".$cliente->id.", Nome: ".$cliente->nome.", Idade: ".$cliente->idade."<br>\n";
 
 }
 
@@ -56,7 +56,7 @@ DICAS PARA CRIAÇÃO DE WEB SERVICES RESTFULL
 
 - SEGURANÇA: Crie um token para validar acesso ao web service
   Digamos que você criou um web service para que os sites da sua empresa possam obter endereços completos. Os sites enviam um cep e o web service retorna um JSon com o endereço correpondente.
-  Essa aplicação deve ser acessada somente por sites da sua empresa, sendo assim, para que outros sites não descubram a url do seu site e passem a utilizá-lo, você precisará validar quem poderá acessá-lo.	
+  Essa aplicação deve ser acessada somente por sites da sua empresa, sendo assim, para que outros sites não descubram a url do seu site e passem a utilizá-lo, você precisará validar quem poderá acessá-lo.  
   Uma forma de fazer isso é através de um token.
   Os sites que precisarem acessar o web service deverão enviar um token e no web service, será verificado se o token enviado é válido para processar a requisição.
   
@@ -68,13 +68,13 @@ DICAS PARA CRIAÇÃO DE WEB SERVICES RESTFULL
   
   $token = $toquen_enviado_na_requisicao;
   switch($token){
-	case (substr($token,5,32) == md5('meu-dado-fixo')):
-		//Ok, o acesso ao web service deve ser liberado
-		//Crie as rotinas a serem executadas pelo web service 
-		break;
-	default:
-		echo "Token inválido";
-		break;		
+  case (substr($token,5,32) == md5('meu-dado-fixo')):
+    //Ok, o acesso ao web service deve ser liberado
+    //Crie as rotinas a serem executadas pelo web service 
+    break;
+  default:
+    echo "{"Erro":"Token inválido!"}";
+    break;    
   }
 
 
@@ -82,12 +82,13 @@ DICAS PARA CRIAÇÃO DE WEB SERVICES RESTFULL
   Imagine que você criou um web service que precisará receber cadastros de uma aplicação remota.
   Para que o sistema externo consiga enviar os dados de modo correto, você precisa informar quais dados o seu web service recebe. Para que o sistema externo consiga interagir com o seu web service, você deverá fornecer a documentação do seu web service.
   Essa documentação deve ser detalhada. 
+  - Codificação utilizada, nesse exemplo JSon.
   - url do seu web service.
   - O padrão do token para acesso.
   - Campos que o seu web service.
   - Tipo de cada um dos campos(string, inteiro, double etc)
   - Número de caracteres de cada um dos campos.
-  - Mensagens de retorno em caso de sucesso ou erro. 
+  - Mensagens de retorno em caso de sucesso ou erro.  
 
 - LOGS: Você precisa armazenar dados para análise das transações realizadas
   Imagine que o seu web service está entre um site e uma API de pagamentos.
