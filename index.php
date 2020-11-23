@@ -73,7 +73,7 @@ DICAS PARA CRIAÇÃO DE WEB SERVICES RESTFULL
     //Crie as rotinas a serem executadas pelo web service 
     break;
   default:
-    echo "{"Erro":"Token inválido!"}";
+    echo '{"Erro":"Token inválido!"}';
     break;    
   }
 
@@ -85,7 +85,7 @@ DICAS PARA CRIAÇÃO DE WEB SERVICES RESTFULL
   - Codificação utilizada, nesse exemplo JSon.
   - url do seu web service.
   - O padrão do token para acesso.
-  - Campos que o seu web service.
+  - Campos do web service.
   - Tipo de cada um dos campos(string, inteiro, double etc)
   - Número de caracteres de cada um dos campos.
   - Mensagens de retorno em caso de sucesso ou erro.  
