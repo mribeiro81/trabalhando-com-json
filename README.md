@@ -21,7 +21,7 @@ SOBRE ESSE DIRETÓRIO
   - Codificação utilizada, nesse exemplo JSon.
   - url do seu web service.
   - O padrão do token para acesso.
-  - Campos que o seu web service.
+  - Campos do seu web service.
   - Tipo de cada um dos campos(string, inteiro, double etc)
   - Número de caracteres de cada um dos campos.
   - Mensagens de retorno em caso de sucesso ou erro. 
