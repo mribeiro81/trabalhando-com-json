@@ -6,7 +6,7 @@ SOBRE ESSE DIRETÓRIO
 
 ### DICAS PARA CRIAÇÃO DE WEB SERVICE RESTFULL
 
-#### 1.RECURSOS: Para consumir web service RESTFULL, você pode utilizar os recursos da biblioteca curl do php, as funções $.ajax ou $.getJSON da biblioteca JQuery.  
+#### 1. RECURSOS: Para consumir web service RESTFULL, você pode utilizar os recursos da biblioteca curl do php, as funções $.ajax ou $.getJSON da biblioteca JQuery.  
 
 #### 2. SEGURANÇA: Crie um token para validar acesso ao web servicev(caso necessário)
   Digamos que você criou um web service para que os sites da sua empresa possam obter 
